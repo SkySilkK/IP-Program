@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 print('***********************')
-print('Country wise Gasoline rates over the past 5 years')
+print('Country wise Gasoline rates over different periods of time in Indian Rupees')
 print('***********************')
 data={'Country':['India','USA','Germany', 'Australia','Japan'],
 2022:[104.5,93.5,81.4,56.8,69.9],
@@ -49,7 +49,7 @@ while ch:
         df.plot(marker="*",markeredgecolor="k")
         plt.xlabel("YEAR")
         plt.ylabel("PRICE")
-        plt.title('Gasoline prices in 5 countries over the last 5 years')
+        plt.title('Gasoline prices different countries over different periods of time')
         plt.legend()
         plt.show()
     elif choice==8:
@@ -58,8 +58,8 @@ while ch:
         y=[102.8,98.52,67.32,88.67,78.62]
         plt.bar(x,y,color='grey', edgecolor='k')
         plt.xlabel('Country')
-        plt.ylabel('Price')
-        plt.title('Gasoline prices in 5 countries over the last 5 years')
+        plt.ylabel('Price in Indian Rs per litre ')
+        plt.title('Gasoline prices different countries over different periods of time')
         plt.show()
     elif choice==9:
         print('HISTOGRAM')
