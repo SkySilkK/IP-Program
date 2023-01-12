@@ -49,7 +49,7 @@ while ch:
         df.plot(marker="*",markeredgecolor="k")
         plt.xlabel("YEAR")
         plt.ylabel("PRICE")
-        plt.title('Gasoline prices different countries over different periods of time')
+        plt.title('Gasoline prices in different countries over different periods of time')
         plt.legend()
         plt.show()
     elif choice==8:
@@ -59,7 +59,7 @@ while ch:
         plt.bar(x,y,color='grey', edgecolor='k')
         plt.xlabel('Country')
         plt.ylabel('Price in Indian Rs per litre ')
-        plt.title('Gasoline prices different countries over different periods of time')
+        plt.title('Gasoline prices in different countries over different periods of time')
         plt.show()
     elif choice==9:
         print('HISTOGRAM')
