@@ -7,7 +7,8 @@ data={'Country':['India','USA','Germany', 'Australia','Japan'],
 2022:[104.5,93.5,81.4,56.8,69.9],
 2021:[107.8,318.01,109.83,93.13,68.03],
 2020:[83.91,177.86,141.79,75.97,92.62],2019:[74.48,213.10,118.37,83.68,
-88.28], 2018:[73.55,302.44,120.83,82.23,73.05]}
+88.28],
+2018:[73.55,302.44,120.83,82.23,73.05]}
 df=pd.DataFrame(data,index=[1,2,3,4,5])
 print(df)
 print('Choices:')
@@ -29,7 +30,7 @@ while ch:
         print(df)
     elif choice==2:
         print('INSERTING ROW')
-        df.loc[5]=eval(input('enter your values : '))
+        df.loc[5]=eval(input('enter your values by country followed by values: '))
         print(df)
     elif choice==3:
         print('Delete a column')
@@ -48,18 +49,18 @@ while ch:
         print("LINE GRAPH")
         df.plot(marker="*",markeredgecolor="k")
         plt.xlabel("YEAR")
-        plt.ylabel("PRICE")
+        plt.ylabel("PRICE PER LITRE IN INDIAN RUPEES")
         plt.title('Gasoline prices in different countries over different periods of time')
         plt.legend()
         plt.show()
     elif choice==8:
         print('BAR GRAPH')
         x=df['Country']
-        y=[102.8,98.52,67.32,88.67,78.62]
+        y=[104.5,93.5,81.4,56.8,69.9]
         plt.bar(x,y,color='grey', edgecolor='k')
-        plt.xlabel('Country')
+        plt.xlabel('All the different countries')
         plt.ylabel('Price in Indian Rs per litre ')
-        plt.title('Gasoline prices in different countries over different periods of time')
+        plt.title('Gasoline prices in different countries in 2022')
         plt.show()
     elif choice==9:
         print('HISTOGRAM')
